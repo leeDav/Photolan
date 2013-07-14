@@ -26,18 +26,24 @@
         <title>PhotoLAN</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+        <div id="app"></div>
+
+        <script type="text/javascript" src="assets/js/cordova/cordova-custom-functions.js"></script>
         <script type="text/javascript" src="assets/js/cordova/cordova.js"></script>
         <script type="text/javascript" src="assets/js/libs/jquery-2.0.2.min.js"></script>
         <script type="text/javascript" src="assets/js/libs/underscore-min.js"></script>
         <script type="text/javascript" src="assets/js/libs/backbone.js"></script>
+        <script type="text/javascript" src="assets/js/views/homeScreen.js"></script>
         <script type="text/javascript" src="assets/js/index.js"></script>
+
+        <script type="text/template" id="t_takePhoto">
+            <button id="btn_takePhoto">Take photo</button>
+        </script>
+
+        <scruot type="text/template" id="t_photo">
+            <img src="" id="selectedImage" height="40%"/>
+        </script>
+
         <script type="text/javascript">
             app.initialize();
         </script>
